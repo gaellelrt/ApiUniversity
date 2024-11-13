@@ -12,7 +12,7 @@ builder.Services.AddControllers()
     );
 
 
-//SeedData.Init();
+SeedData.Init();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 // You as a developer can use Swagger to interact with the API through a web interface

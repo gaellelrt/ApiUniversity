@@ -20,24 +20,28 @@ public static class SeedData
             FirstName = "Alexander",
             LastName = "Carson",
             EnrollmentDate = DateTime.Parse("2016-09-01"),
+            Email = "acarson@ensc.fr",
         };
         Student alonso = new()
         {
             FirstName = "Meredith",
             LastName = "Alonso",
             EnrollmentDate = DateTime.Parse("2018-09-01"),
+            Email = "malonso@ensc.fr",
         };
         Student anand = new()
         {
             FirstName = "Arturo",
             LastName = "Anand",
             EnrollmentDate = DateTime.Parse("2019-09-01"),
+            Email = "aarturo@ensc.fr",
         };
         Student barzdukas = new()
         {
             FirstName = "Gytis",
             LastName = "Barzdukas",
             EnrollmentDate = DateTime.Parse("2018-09-01"),
+            Email = "gbarzdukas@ensc.fr",
         };
         context.Students.AddRange(
             carson,
