@@ -8,3 +8,5 @@ public class EnrollmentDTO
     public int IdCourse { get; set; }
     
     public EnrollmentDTO() { }
+
+}
