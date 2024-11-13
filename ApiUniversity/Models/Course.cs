@@ -6,6 +6,9 @@ public class Course
     public string Title { get; set; } = null!;
     public int Credits { get; set; }
     public List<Enrollment> Enrollments { get; set; } = new();
+    public int DepartmentId { get; set; }
+    public Department Department { get; set; } = null!;
+    public ICollection<Instructor> Instructors { get; set; } = null!;
 
     public Course() { }
 
@@ -14,5 +17,6 @@ public class Course
         Id = courseDTO.Id;
         Title = courseDTO.Title;
         Credits = courseDTO.Credits;
+        DepartmentId = courseDTO.DepartmentId;
     }
 }

@@ -6,6 +6,8 @@ public class CourseDTO
     public int Id { get; set; }
     public string Title { get; set; } = null!;
     public int Credits { get; set; }
+    public int DepartmentId { get; set; }
+
 
     public CourseDTO() { }
 
@@ -14,5 +16,6 @@ public class CourseDTO
         Id = course.Id;
         Title = course.Title;
         Credits = course.Credits;
+        DepartmentId = course.DepartmentId;
     }
 }
