@@ -8,7 +8,12 @@ public class Student
     public DateTime EnrollmentDate { get; set; }
     public List<Enrollment> Enrollments { get; set; } = new();
 
-
+    public Student(){}
     // Default constructor
-    public Student() { }
+    public Student(StudentDTO studentDTO) {
+        Id = studentDTO.Id;
+        LastName = studentDTO.LastName;
+        FirstName = studentDTO.FirstName;
+        EnrollmentDate = studentDTO.EnrollmentDate;
+     }
 }
